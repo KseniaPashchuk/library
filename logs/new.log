@@ -1,0 +1,2 @@
+[FATAL] 2017-04-05 18:07:47.352 [main] PublicationTextFileReader - File input\empty.txt is empty
+[FATAL] 2017-04-05 18:07:47.377 [main] PublicationTextFileReader - File input\noneexistent.txt was not found; java.nio.file.NoSuchFileException: input\noneexistent.txt
