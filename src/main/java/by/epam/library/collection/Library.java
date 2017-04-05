@@ -21,7 +21,7 @@ public class Library {
         return library.get(index);
     }
 
-    public List<Publication> getLibrary() { // нужна сортировка
+    public List<Publication> getLibrary() {
         return library;
     }
 

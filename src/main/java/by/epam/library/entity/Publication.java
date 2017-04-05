@@ -69,15 +69,24 @@ public abstract class Publication {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o){
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()){
+            return false;
+        }
 
         Publication that = (Publication) o;
 
-        if (getPages() != that.getPages()) return false;
-        if (getName() != null ? !getName().equals(that.getName()) : that.getName() != null) return false;
-        if (getPublisher() != null ? !getPublisher().equals(that.getPublisher()) : that.getPublisher() != null)
+        if (getPages() != that.getPages()) {
             return false;
+        }
+        if (getName() != null ? !getName().equals(that.getName()) : that.getName() != null){
+            return false;
+        }
+        if (getPublisher() != null ? !getPublisher().equals(that.getPublisher()) : that.getPublisher() != null) {
+            return false;
+        }
         return getPrice() != null ? getPrice().equals(that.getPrice()) : that.getPrice() == null;
 
     }

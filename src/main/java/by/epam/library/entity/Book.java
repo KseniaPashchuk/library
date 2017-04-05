@@ -58,7 +58,7 @@ public class Book extends Publication {
         if (getAuthor() != null ? !getAuthor().equals(book.getAuthor()) : book.getAuthor() != null){
             return false;
         }
-        return getBookType() == book.getBookType();
+        return getBookType().equals(book.getBookType());
 
     }
 
